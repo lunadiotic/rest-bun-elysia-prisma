@@ -1,15 +1,26 @@
 {
-  "name": "bun-elysia-prisma",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
-  "dependencies": {
-    "elysia": "latest"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+	"name": "bun-elysia-prisma",
+	"version": "1.0.50",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "bun run --watch src/index.ts",
+		"seed": "bun run prisma/seed.ts"
+	},
+	"dependencies": {
+		"@prisma/client": "5.19.1",
+		"@types/bcryptjs": "^2.4.6",
+		"bcryptjs": "^2.4.3",
+		"elysia": "latest"
+	},
+	"devDependencies": {
+		"@types/node": "^22.5.5",
+		"bun-types": "latest",
+		"prisma": "^5.19.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.6.2"
+	},
+	"module": "src/index.js",
+	"prisma": {
+		"schema": "src/prisma/schema.prisma"
+	}
 }
