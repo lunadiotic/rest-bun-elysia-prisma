@@ -3,14 +3,17 @@
 	"version": "1.0.50",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "bun run --watch src/index.ts",
+		"dev": "nodemon",
 		"seed": "bun run prisma/seed.ts"
 	},
 	"dependencies": {
 		"@prisma/client": "5.19.1",
 		"@types/bcryptjs": "^2.4.6",
+		"@types/jsonwebtoken": "^9.0.7",
 		"bcryptjs": "^2.4.3",
-		"elysia": "latest"
+		"elysia": "latest",
+		"jsonwebtoken": "^9.0.2",
+		"nodemon": "^3.1.5"
 	},
 	"devDependencies": {
 		"@types/node": "^22.5.5",
